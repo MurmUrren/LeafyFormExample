@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafy</title>
+    <link href="stylesheet.css" rel="stylesheet"/>
+</head>
+<body>
+    <main class="web-wrapper">
+        <header class="login-image-wrapper">
+            <div class="login-logo-wrapper" role="columnheader">
+                <img src="./images/logo.png">
+                <h1>Leafy</h1>
+            </div>
+            <div class="login-image-footer">
+                <p>Photo by <a href="https://unsplash.com/@lexilaginess">Lexi Laginess</a> on <a href="https://unsplash.com/">Unplash</a></p>
+            </div>
+        </header>
+        <section class="login-form-wrapper">
+            <div class="login-form-header">
+                <p>At <strong>Leafy</strong>, we believe in the power of 
+                    nature to transform your living spaces. 
+                    Our mission is to bring the beauty and benefits of 
+                    plants into every home and office, creating greener, 
+                    healthier, and more inspiring environments.
+                </p>
+
+                <p><i><strong>Join</strong></i> and help us!</p>
+            </div>
+            <form class="login-form" method="post" action="#">
+                <div>
+                    <h1>Register</h1>
+                    <fieldset class="login-form-contents">
+                        <div>
+                            <p>
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" name="usr-first-name" required/>
+                            </p>
+                            <p>
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="usr-last-name">
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <label for="e-mail">EMAIL</label>
+                                <input type="email" id="e-mail" name="usr-email" required>
+                            </p>
+                            <p>
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="tel" id="phone-number" name="usr-phone" required
+                                pattern="([0-9]{10})|([0-9]{3}[.\-\s][0-9]{3}[.\-\s][0-9]{4})">
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="usr-pwd" required>
+                            </p>
+                            <p>
+                                <label for="pwdconfirm">CONFIRM PASSWORD</label>
+                                <input type="password" id="pwdconfirm" name="usr-pwdc" required>
+                            </p>
+                        </div>
+                        
+                    </fieldset>
+                </div>
+                <div class="login-form-footer">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+                
+            </form>
+        </section>    
+
+    </main>
+</body>
+</html>

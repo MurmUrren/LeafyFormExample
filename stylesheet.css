@@ -1,0 +1,212 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+@font-face {
+    font-family: 'natureGreen';
+    src: url(./fonts/GREEN\ NATURE.woff2) format('woff2'),
+         url(./fonts/NatureGreen-gxm66.woff) format('woff');
+}
+
+p {
+    font-family: sans-serif;
+}
+
+
+body{
+    height: 100vh;
+}
+
+.web-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.login-image-wrapper{
+    background: url(./images/lexi-laginess-6poDd1l6UlM-unsplash.jpg);
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+}
+
+.login-logo-wrapper{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0,0,0,0.7);
+    height: 20vh;
+}
+
+.login-logo-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.login-image-footer{
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
+
+.login-image-footer p, .login-image-footer a{
+    font-size: small;
+    color: rgb(136, 105, 105);
+}
+
+.login-logo-wrapper h1{
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    font-family: 'natureGreen', sans-serif;
+}
+
+.login-form-wrapper{
+    flex: 1.7;
+    padding: 50px 0px 50px 0px;
+    background-color: #E8E4E3;
+    min-width: 400px;
+}
+
+.login-form-header{
+    padding: 0 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25%;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.login-form > div > h1 {
+    padding: 20px 50px 0px;
+    font-family: Arial, Helvetica;
+}
+
+.login-form > div:nth-child(1){
+    background-color:white;
+    box-shadow: 2px 5px 8px rgba(68, 68, 68, 0.5);
+}
+
+fieldset {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; /* Allows wrapping of elements */
+    border: none;
+    padding: 0 40px 20px ;
+    position: relative;
+    flex-direction: column;
+}
+
+fieldset div {
+    display: flex;
+    gap: 50px;
+}
+
+fieldset p {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset p > label {
+    font-size: small;
+}
+
+input{
+    border: gray 1px solid;
+    border-radius: 2px;
+}
+
+input:invalid:focus{
+    border: red 1px solid;
+}
+
+input:focus{
+    border: blue 1px solid;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+input:valid:user-valid{
+    border: green 1px solid;
+}
+
+.login-form > div:nth-child(2){
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.login-form button{
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    color: white;
+    background-color: #6b8556;
+    border-radius: 4px;
+    padding: 5px 20px 5px 20px;
+    box-shadow: 2px 5px 8px rgba(68, 68, 68, 0.5);
+    transition: transform 0.3s ease, padding 0.3s ease;
+    transform-origin: center; 
+}
+
+.login-form button:hover{
+    transform: scale(1.1);
+}
+
+.login-form-footer p{
+    margin-top: 20px;
+}
+
+.login-form-footer a{
+    color: #6b8556;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
